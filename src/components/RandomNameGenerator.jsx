@@ -9,14 +9,14 @@ const btnStyle = {
   border: "none",
   cursor: "pointer",
   fontSize: "30px",
-  boxShadow: "0 0 5px 5px gray"
+  boxShadow: "0 0 5px 5px gray",
 };
 
 const RandomNameGenerator = () => {
   const [name, setName] = useState("______");
 
   const handleNameChange = () => {
-    const names = ["Dehan", "Musfiq", "Rahim"];
+    const names = ["Dehan", "Musfiq", "Rahim", "Sohel", "MOhit"];
     const randInt = Math.floor(Math.random() * names.length);
     setName(names[randInt]);
   };
